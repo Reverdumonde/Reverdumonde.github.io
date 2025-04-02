@@ -433,7 +433,7 @@ img {
     }
 
     .menu-section .menu-list .menu-image{
-      max-width: 300px;
+      max-width: 100px;
     }
   }
 
@@ -443,5 +443,8 @@ img {
   }
   .menu-section .menu-list .menu-item{
     max-width: 100%;
+  }
+  .menu-section .menu-list .menu-image{
+    max-width: 100px;
   }
 }
