@@ -6,6 +6,7 @@
     <title>|Rever du monde|</title>
     <link rel="icon" href="images/logo_white.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
 
     <style>
@@ -87,8 +88,6 @@
                         </i></a>
                         <a href="#" class="social-link"><i class="fa-brands fa-instagram">
                         </i></a>
-                        <a href="#" class="social-link"><i class="fa-brands fa-x-twitter">
-                        </i></a>
                     </div>
                 </div>
             </div>
@@ -143,36 +142,43 @@
          <section class="testimonials-section">
             <h2 class="section-title">Testimonials</h2>
             <div class="section-content">
-                <div class="slider-container">
+                <div class="slider-container swiper">
                     <div class="slider-wrapper">
-                        <ul class="testimonials-list">
-                            <li class="testimonials">
+                        <ul class="testimonials-list swiper-wrapper">
+                            <li class="testimonial swiper-slide">
                                 <img src="images/user.png" alt="User" class="user-image">
-                                <h3 class="name">User_1</h3>
+                                <h3 class="name">morty</h3>
                                 <i class="feedback">something</i>
                             </li>
-                            <li class="testimonials">
+                            <li class="testimonial swiper-slide">
                                 <img src="images/user.png" alt="User" class="user-image">
-                                <h3 class="name">User_1</h3>
+                                <h3 class="name">Changwong</h3>
                                 <i class="feedback">something</i>
                             </li>
-                            <li class="testimonials">
+                            <li class="testimonial swiper-slide">
                                 <img src="images/user.png" alt="User" class="user-image">
-                                <h3 class="name">User_1</h3>
+                                <h3 class="name">Kimjibab</h3>
                                 <i class="feedback">something</i>
                             </li>
-                            <li class="testimonials">
+                            <li class="testimonia swiper-slide">
                                 <img src="images/user.png" alt="User" class="user-image">
-                                <h3 class="name">User_1</h3>
+                                <h3 class="name">baobab</h3>
                                 <i class="feedback">something</i>
                             </li>
                         </ul>
+
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div> 
                 </div>
             </div>
          </section>
     </main>
 
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
