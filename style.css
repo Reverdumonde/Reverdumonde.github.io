@@ -23,6 +23,7 @@
     --dark-color: #252525;
     --oatmeal-color: #E8E3D6;
     --darkcoffee-color: #6F4F28;
+    --navy-color: #041E42;
 
     /* Font size */
     --font-size-s: 0.9rem;
@@ -66,6 +67,7 @@ button{
 img {
   width: 100%;
 }
+
 
 .section-content{
   margin: 0 auto;
@@ -315,6 +317,45 @@ img {
 
   .menu-section .menu-list .menu-item .text{
     font-size: var(--font-size-m);
+  }
+  /* Testiomonials section styling*/
+  .testimonials-section .testimonial .name,
+.testimonials-section .testimonial .feedback {
+  font-family: 'Inter', sans-serif !important;
+  letter-spacing: -0.3px;
+  line-height: 1.2;
+}
+.testimonials-section,
+.testimonials-section * {
+  font-family: 'Inter', sans-serif !important;
+  letter-spacing: -0.3px;
+  line-height: 1.2;
+}
+  .testimonials-section{
+    padding: 50px 0 100px;
+    background: var(--oatmeal-color);
+  }
+  .testimonials-section .testimonial{
+    display: flex;
+    padding: 35px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .testimonials-section .testimonial .user-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 50px;
+    border-radius: var(--border-redius-circle);
+  }
+
+  .testimonials-section .testimonial .name{
+    margin-bottom: 16px;
+    font-size: var(--font-size-m);
+  }
+  .testimonials-section .testimonial .feedback {
+    line-height: 25px;
   }
 
   /* 핸드폰을 위한 디자인*/
