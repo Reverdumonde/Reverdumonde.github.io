@@ -24,6 +24,7 @@
     --oatmeal-color: #E8E3D6;
     --darkcoffee-color: #6F4F28;
     --navy-color: #041E42;
+    --black-color: #000000;
 
     /* Font size */
     --font-size-s: 0.9rem;
@@ -106,7 +107,7 @@ img {
     position: fixed;
     width: 100%;
     z-index: 5;
-    background: var(--dark-color);
+    background: var(--oatmeal-color);
 
   }
 
@@ -118,11 +119,12 @@ img {
   }
 
   .navbar .nav-logo .logo-text {
-    color: var(--white-color);
-    font-size:var(--font-size-xl);
-    font-weight: var(--font-weight-semibold);
-    font: sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    color: var(--black-color);
   }
+  
 
   .navbar .nav-menu{
     display: flex;
@@ -131,7 +133,7 @@ img {
 
   .navbar .nav-menu .nav-link {
     padding: 10px 10px;
-    color: var(--white-color);
+    color: var(--black-color);
     font-size: var(--font-size-m);
     border-radius: var(--border-redius-m);
     transition: 0.3s ease;
@@ -147,6 +149,7 @@ img {
   }
 
   /* Hero section styling */
+
   .hero-section{
     min-height: 100vh;
     background: var(--darkcoffee-color);
