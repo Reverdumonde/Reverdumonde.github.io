@@ -9,7 +9,44 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+      <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+    .hero-section {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
 
+    .hero-section video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: 1;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+      filter: brightness(70%); /* 어둡게 처리해서 텍스트 더 잘 보이게 */
+    }
+
+    .hero-section .section-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 2;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
     <!-- Header / Navbar-->
@@ -48,13 +85,17 @@
     <main>
         <!-- Hero section -->
         <section class="hero-section">
+            <video autoplay muted loop playsinline>
+                <source src="video/herosection.mp4" type="video/mp4">
+                브라우저가 영상을 지원하지 않습니다.
+              </video>          
             <div class="section-content">
                 <div class="hero-details">
                     <h2 class="title">We can do it!</h2>
-                    <h3 class="subtitle">We can save the earth
-                    from today!</h3>
-                    <p class="description">Welcome to |Rever du monde|,
-                        I'am glad to sell you our product. We used discarded clothes to make stylish clothes which you love.</p>
+                    <h2 class="subtitle">We can save the earth
+                    from today!</h2>
+                    <h2 class="description">Welcome to |Rever du monde|,
+                        I'am glad to sell you our product. We used discarded clothes to make stylish clothes which you love.</h2>
                         <div class="buttons">
                         <a href="#" class="button order-now">Order Now</a>
                         <a href="#" class="button Contact-us">Contact Us</a>
@@ -169,10 +210,4 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
-</html>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
-</body>
-</html>
+</html> 
